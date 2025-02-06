@@ -27,11 +27,33 @@
       <li><a class="dropdown-item" href="#">Separated link</a></li>
     </ul>
   </div>
-      <div class="d-flex gap-4"> <p>Docs</p> <p>Examples </p> <p>Icons</p> <p>Thames </p> </div>
+      <div class="d-flex gap-4"> <p class="mt-3">Docs</p> <p class="mt-3">Examples </p> <p class="mt-3">Icons</p> <p class=" mt-2"><!-- Button trigger modal -->
+        <button type="button" class="btn btn-body border " data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Thames 
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div> </p> </div>
       <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">           
- <button class=" me-5 btn-outline-success" type="submit">Search</button>
-    <button class="btn btn- dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <button class=" me-5 btn  bg-dark btn-outline-success" type="submit">Search</button>
+ <div class="dropdown">  <button class="btn btn- dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           <img src="./vecteezy_sun-icon-set-clipart-design-illustration_9304897.png" alt="" width="40">
            <ul class="dropdown-menu dropdown-menu-dark">
             <li><a class="dropdown-item active" href="#">light</a></li>
@@ -40,7 +62,8 @@
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Separated link</a></li>
           </ul>
-
+</div>
+  
   
           </form>
         </nav>
